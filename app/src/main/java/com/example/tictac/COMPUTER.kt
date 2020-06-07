@@ -1,5 +1,6 @@
 package com.example.tictac
 
+import android.content.Intent
 import android.graphics.Color
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,10 @@ class COMPUTER : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.computer_lay)
+        button16.setOnClickListener {
+            val intent16 = Intent(this,MainActivity::class.java)
+           startActivity(intent16)
+        }
     }
 
 
@@ -121,9 +126,23 @@ class COMPUTER : AppCompatActivity() {
                 Toast.makeText(this, "Player 2 Won The Game", Toast.LENGTH_LONG).show()
             }
         }
+        if (winner > 0){
+            btn_1.isEnabled = false
+            btn_2.isEnabled = false
+            btn_3.isEnabled = false
+            btn_4.isEnabled = false
+            btn_5.isEnabled = false
+            btn_6.isEnabled = false
+            btn_7.isEnabled = false
+            btn_8.isEnabled = false
+            btn_9.isEnabled = false
+
+
+        }
 
 
     }
+
     private fun Computer(){
         var unoccupied = ArrayList<Int>()
         for (i in 1..9){

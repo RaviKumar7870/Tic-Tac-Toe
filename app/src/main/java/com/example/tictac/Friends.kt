@@ -1,5 +1,6 @@
 package com.example.tictac
 
+import android.content.Intent
 import android.graphics.Color
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+
 import kotlinx.android.synthetic.main.friends.*
 import java.util.*
 import kotlin.collections.ArrayList
@@ -17,6 +19,10 @@ class Friends : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.friends)
+        button36.setOnClickListener {
+            val intent26 = Intent(this,MainActivity::class.java)
+            startActivity(intent26)
+        }
     }
 
 
@@ -61,9 +67,9 @@ class Friends : AppCompatActivity() {
             activePlayer = 1
         }
         buSelected.isEnabled = false
-        checkwinner()
+        checkWinner()
     }
-    private fun checkwinner(){
+    private fun checkWinner(){
         var winner = -1
         if (player1.contains(1) and player1.contains(2) and player1.contains(3)){
             winner = 1

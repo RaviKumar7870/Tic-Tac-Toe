@@ -9,6 +9,23 @@
     tools:context=".COMPUTER">
 
     <TableRow
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        >
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/ic_menu_revert"
+            android:foregroundGravity="left"
+            android:text="" />
+    </TableRow>
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
@@ -43,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#0861C6"
-            android:text="Player2 : 0"
+            android:text="Computer : 0"
             android:layout_margin="5dp"/>
     </TableRow>
 
@@ -161,5 +178,35 @@
             android:text=""
             android:textSize="70sp"
             android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_width="224dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+
+            android:background="#00FFFFFF"
+            android:text="" />
+    </TableRow>
+    <TableRow
+        android:layout_width="224dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button226"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+
+            android:background="#00FFFFFF"
+            android:text="" />
     </TableRow>
 </TableLayout>

@@ -8,6 +8,23 @@
     android:gravity="center"
     tools:context=".Friends">
     <TableRow
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        >
+
+        <Button
+            android:id="@+id/button36"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/ic_menu_revert"
+            android:foregroundGravity="left"
+            android:text="Back" />
+    </TableRow>
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
@@ -160,5 +177,35 @@
             android:text=""
             android:textSize="70sp"
             android:textStyle="bold"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="224dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+
+            android:background="#00FFFFFF"
+            android:text="" />
+    </TableRow>
+    <TableRow
+        android:layout_width="224dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button326"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+
+            android:background="#00FFFFFF"
+            android:text="" />
     </TableRow>
 </TableLayout>
